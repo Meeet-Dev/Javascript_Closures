@@ -1,4 +1,5 @@
 // Example 1
+// Create a function that generates custom greeting functions for different languages.
 
 function createGreeter(language) {
   const greetings = {
