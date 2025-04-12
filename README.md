@@ -1,20 +1,40 @@
-This repository contains examples and practice problems covering essential JavaScript concepts that form the foundation for advanced JavaScript development, including frameworks like React.
-Core Concepts Covered
+# 📘 JavaScript Core Concepts & Practice Problems
 
-1. Execution Context & Call Stack
-The execution context is the environment in which JavaScript code runs, while the call stack tracks the execution contexts as functions are called and completed.
+This repository contains **examples and practice problems** that cover essential **JavaScript concepts**, forming the foundation for advanced development in frameworks like **React**, **Node.js**, and beyond.
 
-2. Hoisting, Scope, and Block vs Function Scope
+Whether you're a beginner solidifying the basics or an experienced dev brushing up for interviews, this resource is built to help you understand how JavaScript works under the hood.
 
-Hoisting: JavaScript's behavior of moving declarations to the top of their scope
-Function Scope: Variables declared with var are accessible throughout the function
-Block Scope: Variables declared with let and const are only accessible within the block they are defined
+---
 
-3. Variable Declarations: let, const, var
+## 📚 Core Concepts Covered
 
-var: Function-scoped, can be redeclared, hoisted (initialized as undefined)
-let: Block-scoped, can't be redeclared, can be reassigned, hoisted (but not initialized)
-const: Block-scoped, can't be redeclared, can't be reassigned, hoisted (but not initialized)
+### 1️⃣ Execution Context & Call Stack
 
-4. Closures
-A closure occurs when a function remembers and accesses variables from its outer scope, even after the outer function has finished execution.
+- **Execution Context**: The environment in which JavaScript code is executed. Each function call creates a new execution context.
+- **Call Stack**: A stack structure that tracks execution contexts. Functions are pushed to the stack when called and popped off when execution finishes.
+
+---
+
+### 2️⃣ Hoisting, Scope, and Block vs Function Scope
+
+- **Hoisting**: JavaScript's default behavior of moving declarations to the top of their scope (only declarations are hoisted, not initializations).
+- **Function Scope**: Variables declared with `var` are scoped to the entire function in which they are declared.
+- **Block Scope**: Variables declared with `let` or `const` are limited to the block `{}` in which they are defined.
+
+---
+
+### 3️⃣ Variable Declarations: `var`, `let`, and `const`
+
+| Keyword | Scope         | Redeclarable | Reassignable | Hoisted |
+|---------|---------------|--------------|--------------|---------|
+| `var`   | Function       | ✅ Yes        | ✅ Yes        | ✅ Yes (undefined) |
+| `let`   | Block          | ❌ No         | ✅ Yes        | ✅ Yes (but uninitialized) |
+| `const` | Block          | ❌ No         | ❌ No         | ✅ Yes (but uninitialized) |
+
+---
+
+### 4️⃣ Closures
+
+A **closure** is created when a function retains access to variables from its **outer lexical scope**, even after the outer function has returned.
+
+
