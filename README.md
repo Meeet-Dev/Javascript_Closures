@@ -50,4 +50,15 @@ let z = x();
 console.log(z)
 z();
 ```
--This example demonstrates a closure in JavaScript — when a function "remembers" the variables from its lexical scope, even after that outer function has returned.
+
+This example demonstrates a closure in JavaScript — when a function "remembers" the variables from its lexical scope, even after that outer function has returned.
+
+When x() is invoked, it returns y() function. So the x() function has been executed and it's no longer present in the global execution context...
+
+After x() finishes running, its execution context is popped off the call stack.
+
+...still the y() when executed later remembers the variable a from the x()...
+
+Yes! Even though x() is no longer "active", the function y was created inside x, so it remembers the scope in which it was defined.
+
+
