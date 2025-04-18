@@ -50,3 +50,4 @@ let z = x();
 console.log(z)
 z();
 ```
+-This example demonstrates a closure in JavaScript — when a function "remembers" the variables from its lexical scope, even after that outer function has returned.
