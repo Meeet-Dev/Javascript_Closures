@@ -37,4 +37,16 @@ Whether you're a beginner solidifying the basics or an experienced dev brushing 
 
 A **closure** is created when a function retains access to variables from its **outer lexical scope**, even after the outer function has returned.
 
+```js
+function x(){
+  let a=10;
+  function y(){
+  console.log(a);
+}
+  return y;
+}
 
+let z = x();
+console.log(z)
+z();
+```
